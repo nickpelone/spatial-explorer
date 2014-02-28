@@ -9,3 +9,6 @@ body {
 .headerText {
     font-size: 300%
 }
+#paddingSlider{
+    margin-top:100px;
+}
