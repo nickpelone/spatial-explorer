@@ -1,14 +1,47 @@
 body {
-    background: #b9c9ff;
+    background: url('resources/03514_duskatlakezurich_2880x1800.jpg');
     font-family: 'Roboto', sans-serif;
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 .header {
-    background: #FFF;
-    color: inherit;
+    background: rgba(70,125,255,0.3);
+    color: rgb(244, 244, 244);
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 .headerText {
     font-size: 300%
 }
-#paddingSlider{
-    margin-top:100px;
+#paddingSlider {
+    margin-top: 100px;
+    width: 300px;
+}
+#target {
+    border: 1000px;
+    border-color: red;
+    background-color: red;
+    display: inline-block;
+}
+.dummy {
+    display: inline-block;
+}
+.info {
+    display: inline-block;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.7);
+    padding:5px;
+    width: 30em;
+    float: left;
+    margin-right: 200px;
+
+}
+
+.elseContainer {
+    clear: left;
+}
+
+.infoContainer {
+    /* dummy css rule */
 }

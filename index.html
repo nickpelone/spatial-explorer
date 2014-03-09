@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html>
-
+    <!--Spatial CSS Explorer Copyright (c) 2014 Nick Pelone. All rights reserved-->
 <head>
     <title>Exploring Spatial Relationships with CSS</title>
     <!--meta viewport ?? -->
     <!--Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!--jquery UI -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
     <!--app css-->
     <link type="text/css" rel="stylesheet" href="app.css">
-
 </head>
 
 <body>
     <div class="header headerText">
         Exploring Spatial Relationships with CSS
     </div>
-    <div class="info">
+    <div class="infoContainer">
+        <div class="info">
+            So there's this thing called the <b>CSS Box Model</b>. Maybe you've heard of it.
+            It consists of four different things every HTML element has:
+            <ul>
+                <li>a margin value</li>
+                    <ul><li>what makes space between elements</li></ul>
+                <li>a border value</li>
+                    <ul><li>what gives an element a literal border(think thinkness of border)</li></ul>
+                <li>a padding value</li>
+                    <ul><li>what fills up an element with extra space</li></ul>
+                <li><b>the content itself of the element</b></li>
+            </ul>
+            In addition to those things, every element also has a <b>display style</b>.
+            This changes the way the elements 'stack' next and around each other.
+            In fact, it's how this box doesn't stretch all across the screen.
+        </div>
+        <div class="info" id="info2">
+            Does this work?fnslkfsldkf
+        </div>
     </div>
-    <div id="workspace">
-
+    <div class="elseContainer">
+        <div id="workspace">
+            Stuff will be here.
+        </div>
+        <div id="paddingSlider" class="sider"></div>
+        <p id="paddingText">Padding: 0px</p>
+        <div id="marginSlider" class="slider"></div>
+        <div id="borderSlider" class="slider"></div>
+        <div id="widthSlider" class="slider"></div>
+        <div id="heightSlider" class="slide"></div>
+        <div id="insert"></div>
+        <div id="target">This is the Target div.
+            <br>Rules you change with the sliders will affect me.
+        </div>
     </div>
-    <div id="paddingSlider" class="sider"></div>
-    <p id="paddingText">Padding: 0px</p>
-    <div id="marginSlider" class="slider"></div>
-    <div id="borderSlider" class="slider"></div>
-    <div id="widthSlider" class="slider"></div>
-    <div id="heightSlider" class="slide"></div>
-
-
-
     <!-- JS here-->
-
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
