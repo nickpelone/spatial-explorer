@@ -2,7 +2,6 @@ body {
     background: url('resources/03514_duskatlakezurich_2880x1800.jpg');
     font-family: 'Roboto', sans-serif;
     background-repeat:no-repeat;
-    background-size: cover;
 }
 .header {
     background: rgba(70,125,255,0.3);
